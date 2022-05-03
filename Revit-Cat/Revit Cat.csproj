@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Panel\MainPageData.cs" />
+    <Compile Include="Resources\ResourceSound.cs" />
     <Compile Include="Ribbon\CoreAssembly.cs" />
     <Compile Include="Panel\DockablePaneHandler.cs" />
     <Compile Include="Main.cs" />
@@ -81,9 +82,14 @@
     <EmbeddedResource Include="Resources\Icons\Revit_Cat_Call.png" />
     <EmbeddedResource Include="Resources\Icons\Revit_Cat_Sleep.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Resources\Images\Revit_Cat_Cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sounds\Cat_Purr.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sounds\Cat_Meow.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

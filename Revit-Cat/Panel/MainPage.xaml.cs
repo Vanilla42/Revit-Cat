@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Media;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -14,6 +15,8 @@ namespace Revit_Cat
         private int m_right = 1;
         private int m_top = 1;
         private int m_bottom = 1;
+
+        private SoundPlayer player;
 
         public MainPage(UIControlledApplication uiapp)
         {
@@ -52,11 +55,17 @@ namespace Revit_Cat
 
         private void Button_Milk_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer p = new SoundPlayer(ResourceSound.GetSound("Cat_Meow.wav"));
+            p.Play();
+
             TaskDialog.Show("Cat", "Mrrr..Meow!");
         }
 
         private void Button_Whiskas_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer p = new SoundPlayer(ResourceSound.GetSound("Cat_Purr.wav"));
+            p.Play();
+
             TaskDialog.Show("Cat", "Purrrr!");
         }
     }
