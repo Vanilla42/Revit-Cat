@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>Revit Cat</Name>
+		<Assembly>Revit Cat.dll</Assembly>
+		<AddInId>704C844C-7912-49A6-A143-9E511E42E141</AddInId>
+		<FullClassName>Revit_Cat.Main</FullClassName>
+		<VendorId>Pinchuk</VendorId>
+		<VendorDescription>42</VendorDescription>
+	</AddIn>
+</RevitAddIns>
