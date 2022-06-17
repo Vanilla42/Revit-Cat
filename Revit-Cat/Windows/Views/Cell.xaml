@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Revit_Cat.Cell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Revit_Cat"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BorderBrush="#FFDDDDDD" BorderThickness="1">
+
+    <UserControl.DataContext>
+        <local:CellViewModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Button Width="25" Height="25"
+                Command="{Binding ToogleTileStateCommand}">
+            <Image Source="{Binding Image}" Stretch="UniformToFill" />
+        </Button>
+    </Grid>
+</UserControl>

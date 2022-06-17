@@ -68,6 +68,15 @@
     <Compile Include="Panel\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Models\GameModel.cs" />
+    <Compile Include="Windows\ViewModels\CellViewModel.cs" />
+    <Compile Include="Windows\ViewModels\GameViewModel.cs" />
+    <Compile Include="Windows\Views\Cell.xaml.cs">
+      <DependentUpon>Cell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Views\GameWindow.xaml.cs">
+      <DependentUpon>GameWindow.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Revit Cat.addin" />
@@ -76,6 +85,14 @@
     <Page Include="Panel\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Views\Cell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Views\GameWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -91,5 +108,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Sounds\Cat_Meow.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\Revit_Cat_Game_Cell.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

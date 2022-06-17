@@ -45,7 +45,8 @@ namespace Revit_Cat
 
         private void mouseClick(object sender, MouseButtonEventArgs e)
         {
-            TaskDialog.Show("Cat", "Meow!");
+            //TaskDialog.Show("Cat", "Meow!");
+            Window gameWindow = new GameWindow();
         }
 
         private void DockableDialogs_Loaded(object sender, RoutedEventArgs e)
